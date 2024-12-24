@@ -47,12 +47,6 @@ const categories = [
     ],
     __v: 0,
   },
-  { _id: "655cd8d17f709814eb7ba432", name: "Test", items: [], __v: 0 },
-  { _id: "655cd8d37f709814eb7ba435", name: "Test", items: [], __v: 0 },
-  { _id: "655cd8d47f709814eb7ba438", name: "Test", items: [], __v: 0 },
-  { _id: "655cd8d67f709814eb7ba43b", name: "Test", items: [], __v: 0 },
-  { _id: "655cd8d77f709814eb7ba43e", name: "Test", items: [], __v: 0 },
-  { _id: "655cd8d87f709814eb7ba441", name: "Test", items: [], __v: 0 },
 ];
 
 export default categories;

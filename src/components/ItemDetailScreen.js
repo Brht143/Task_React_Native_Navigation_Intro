@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
-import { View, Text, Button } from "react-native";
+import { View, Text, Button, Image, StyleSheet } from "react-native";
 
 function ItemDetailScreen({ route }) {
   // const name = route.params.item.name;
@@ -11,13 +11,13 @@ function ItemDetailScreen({ route }) {
 
   const navigation = useNavigation();
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>name : {name}</Text>
-      <Text>category: {category}</Text>
-      <Text>description : {description}</Text>
-      <Text>image : {image}</Text>
-      <Text>price: {price}</Text>
-      <Text>Owner: {owner}</Text>
+    <View style={styles.container}>
+      <Text style={styles.font}>name : {name}</Text>
+      <Text style={styles.font}>category: {category}</Text>
+      <Text style={styles.description}>description : {description}</Text>
+      <Image source={{ uri: image }} style={styles.image}></Image>
+      <Text style={styles.font}>price: {price}</Text>
+      <Text style={styles.font}>Owner: {owner}</Text>
 
       <Button
         title="Go to HomeScreen"
@@ -26,5 +26,25 @@ function ItemDetailScreen({ route }) {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#4A628A",
+    color: "#DFF2EB",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  font: {
+    color: "#DFF2EB",
+    marginBlock: 20,
+    fontSize: 20,
+  },
+  description: {
+    color: "#DFF2EB",
+    textAlign: "center",
+  },
+  image: { height: 180, width: 280, borderRadius: 10 },
+});
 
 export default ItemDetailScreen;

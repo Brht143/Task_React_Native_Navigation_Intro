@@ -11,7 +11,6 @@ import {
   ScrollView,
 } from "react-native";
 import AntDesign from "@expo/vector-icons/AntDesign";
-// import Categories from "./Categories";
 import categories from "../../data/categories";
 import items from "../../data/items";
 
@@ -63,7 +62,7 @@ function HomeScreen(props) {
           justifyContent: "flex-start",
         }}
       >
-        <Text>Home</Text>
+        <Text>Welcome</Text>
         <View style={{ flexDirection: "row", alignItems: "center" }}>
           <AntDesign name="search1" size={18} color="black" />
           <TextInput
@@ -184,39 +183,6 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
     justifyContent: "center",
     alignItems: "center",
-  },
-  restaurantsBox: {
-    flex: 0.75,
-    width: "100%",
-    backgroundColor: "#4A628A",
-    borderColor: "#fff",
-    // borderBottomWidth: 1,
-    flexDirection: "row",
-    flexWrap: "nowrap",
-    justifyContent: "center",
-    alignItems: "center",
-    marginBlockStart: 3,
-    marginBlockEnd: 15,
-  },
-  restaurantBox: {
-    borderColor: "#fff",
-    flexWrap: "wrap",
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-    gap: 10,
-  },
-  menuBox: {
-    flex: 4,
-    width: "100%",
-    paddingInlineStart: 25,
-    // backgroundColor: "#4A628A",
-    // backgroundColor: "gold",
-    borderColor: "#fff",
-    // flexDirection: "row",
-    flexWrap: "nowrap",
-    justifyContent: "space-between",
-    // alignItems: "stretch",
   },
   itemBox: {
     backgroundColor: "#7AB2D3",

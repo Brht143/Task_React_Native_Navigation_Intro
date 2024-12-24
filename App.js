@@ -1,6 +1,4 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-
 import HomeNavigation from "./src/screens/HomeNavigation";
 import { NavigationContainer } from "@react-navigation/native";
 
