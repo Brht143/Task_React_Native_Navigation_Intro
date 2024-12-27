@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import HomeNavigation from "./src/screens/HomeNavigation";
+import HomeNavigation from "./src/navigations/HomeNavigation";
 import { NavigationContainer } from "@react-navigation/native";
 
 export default function App() {

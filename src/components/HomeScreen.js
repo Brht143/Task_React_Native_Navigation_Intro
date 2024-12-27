@@ -51,7 +51,7 @@ function HomeScreen(props) {
       </View>
     );
   });
-  console.log(itemsView);
+  // console.log(itemsView);
 
   return (
     <>

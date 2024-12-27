@@ -3,11 +3,8 @@ import { useNavigation } from "@react-navigation/native";
 import { View, Text, Button, Image, StyleSheet } from "react-native";
 
 function ItemDetailScreen({ route }) {
-  // const name = route.params.item.name;
   const { name, category, description, image, price, owner } =
     route.params.item;
-
-  // console.log("name ", item);
 
   const navigation = useNavigation();
   return (
@@ -15,7 +12,7 @@ function ItemDetailScreen({ route }) {
       <Text style={styles.font}>name : {name}</Text>
       <Text style={styles.font}>category: {category}</Text>
       <Text style={styles.description}>description : {description}</Text>
-      <Image source={{ uri: image }} style={styles.image}></Image>
+      <Image style={styles.image} source={{ uri: image }}></Image>
       <Text style={styles.font}>price: {price}</Text>
       <Text style={styles.font}>Owner: {owner}</Text>
 
